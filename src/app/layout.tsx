@@ -8,26 +8,25 @@ import Footer from "@/components/Footer";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Gereja POUK Wasuponda · Jadwal Ibadah, Warta & Renungan",
-    template: "%s · POUK Wasuponda",
+    default: "PPG POUK Wasuponda · Persekutuan Pemuda Gereja",
+    template: "%s · PPG POUK Wasuponda",
   },
   description:
-    "Website resmi Gereja Persekutuan Oikumene Umat Kristen (POUK) Wasuponda, Luwu Timur. Informasi jadwal ibadah rutin, warta jemaat, renungan firman, persembahan, dan kegiatan pelayanan.",
+    "Website resmi Persekutuan Pemuda Gereja (PPG) POUK Wasuponda, Luwu Timur. Informasi ibadah pemuda, kegiatan, kepengurusan, dan pendaftaran anggota.",
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
     apple: "/icon.png",
   },
   openGraph: {
-    title: "Gereja POUK Wasuponda · Rumah Keluarga Bertumbuh dalam Iman",
+    title: "PPG POUK Wasuponda · Generasi Muda Berakar dalam Kristus",
     description:
-      "Gereja Persekutuan Oikumene Umat Kristen Wasuponda, Luwu Timur. Terbuka bagi seluruh jemaat dan keluarga.",
+      "Persekutuan Pemuda Gereja POUK Wasuponda, Luwu Timur. Wadah pelayanan dan persekutuan generasi muda.",
     locale: "id_ID",
     type: "website",
   },

@@ -3,23 +3,21 @@ import { PageHero } from "@/components/blocks";
 import { dayNames, mapsUrl, services } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Jadwal Ibadah",
-  description: "Jadwal ibadah raya, persekutuan pemuda, remaja, dan sekolah minggu di POUK Wasuponda.",
+  title: "Jadwal Ibadah Pemuda",
+  description: "Jadwal ibadah persekutuan pemuda PPG POUK Wasuponda setiap Kamis pukul 18:30 WITA.",
 };
 
 export default function Ibadah() {
-  // Services are ordered: Minggu 10:00 -> Pemuda -> Remaja -> Sekolah Minggu (paling bawah)
   const list = services;
 
   return (
     <>
       <PageHero
-        badge="Jadwal Peribadahan"
-        title="Jadwal Ibadah Jemaat"
-        desc="Waktu pelaksanaan ibadah rutin mingguan jemaat POUK Wasuponda dalam Zona Waktu Indonesia Tengah (WITA). Seluruh ibadah terbuka bagi jemaat dan keluarga."
+        badge="Ibadah Pemuda"
+        title="Jadwal Ibadah Persekutuan"
+        desc="Ibadah rutin pemuda PPG POUK Wasuponda dalam Zona Waktu Indonesia Tengah (WITA). Terbuka bagi seluruh pemuda dan teman-teman yang ingin bersekutu."
       />
 
-      {/* Service Schedule List Only */}
       <section className="mx-auto max-w-[1280px] px-5 sm:px-6 md:px-8 py-16">
         <div className="max-w-4xl mx-auto space-y-4">
           {list.map((s) => (
@@ -27,7 +25,7 @@ export default function Ibadah() {
               key={s.id}
               className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 rounded-[20px] border border-[#EDEDED] bg-white p-6 shadow-[0_2px_14px_rgba(0,0,0,0.02)] transition-all duration-300 hover:border-[#141414]/25 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)]"
             >
-              {/* Day & Time Column */}
+              {/* Day & Time */}
               <div className="sm:w-52 shrink-0">
                 <span className="inline-block rounded-full bg-[#EFF6FF] px-3 py-0.5 text-[11px] font-[600] text-[#1D4ED8] mb-1.5">
                   {s.badge || "Ibadah"}
@@ -40,7 +38,7 @@ export default function Ibadah() {
                 </p>
               </div>
 
-              {/* Service Info Column */}
+              {/* Info */}
               <div className="grow">
                 <h3 className="text-[18px] font-[650] text-[#141414]">
                   {s.name}
@@ -49,7 +47,6 @@ export default function Ibadah() {
                   {s.note}
                 </p>
                 <div className="mt-2.5 flex flex-wrap items-center gap-3 text-[12px] text-[#707070]">
-                  {/* Location with SVG Pin Icon matching Berita & Acara */}
                   <span className="flex items-center gap-1.5 font-[500]">
                     <svg
                       className="h-3.5 w-3.5 shrink-0 text-[#9E9E9E]"
@@ -70,7 +67,7 @@ export default function Ibadah() {
                 </div>
               </div>
 
-              {/* Action Button: Maps Direction */}
+              {/* Maps Button */}
               <div className="shrink-0 self-start sm:self-center">
                 <a
                   href={mapsUrl}

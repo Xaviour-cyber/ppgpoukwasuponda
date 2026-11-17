@@ -9,9 +9,9 @@ export default function KegiatanView({ events }: { events: Event[] }) {
 
   const categories = [
     { label: "Semua", key: "Semua" },
-    { label: "Komisi Pemuda", key: "pemuda" },
-    { label: "Komisi Diakonia", key: "diakonia" },
-    { label: "Ibadah Khusus & Raya", key: "khusus" },
+    { label: "SEKBER", key: "sekber" },
+    { label: "Olahraga", key: "olahraga" },
+    { label: "Pemuda", key: "pemuda" },
     { label: "Kegiatan Rutin", key: "rutin" },
   ];
 
@@ -44,7 +44,7 @@ export default function KegiatanView({ events }: { events: Event[] }) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {filtered.map((e) => {
             const waInquiryUrl = `https://wa.me/${church.wa}?text=${encodeURIComponent(
-              `Shalom Sekretariat POUK Wasuponda, saya ingin bertanya dan mendaftar untuk kegiatan: *${e.title}* (${e.dateFull}).`
+              `Shalom PPG POUK Wasuponda, saya ingin bertanya dan mendaftar untuk kegiatan: *${e.title}* (${e.dateFull}).`
             )}`;
 
             return (

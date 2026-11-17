@@ -10,17 +10,17 @@ export default function ScheduleSection() {
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-12">
           <span className="inline-flex items-center rounded-full bg-[#F2F2F2] px-3.5 py-1 text-[12px] font-[600] uppercase tracking-wider text-[#707070] mb-3">
-            Peribadahan Jemaat
+            Ibadah Pemuda
           </span>
           <h2 className="text-[28px] sm:text-[36px] md:text-[40px] font-[650] tracking-[-0.03em] text-[#141414] leading-[1.18]">
             Jadwal Ibadah Rutin
           </h2>
           <p className="mt-2.5 text-[14px] sm:text-[16px] text-[#707070] leading-[1.6]">
-            Waktu pelaksanaan ibadah jemaat POUK Wasuponda dalam Zona Waktu Indonesia Tengah (WITA).
+            Ibadah persekutuan pemuda PPG POUK Wasuponda dalam Zona Waktu Indonesia Tengah (WITA).
           </p>
         </div>
 
-        {/* Timetable Container — Mobile First */}
+        {/* Timetable Container */}
         <div className="max-w-4xl mx-auto rounded-[24px] border border-[#EDEDED] bg-[#FAFAFA] p-5 sm:p-7 md:p-8 shadow-[0_2px_16px_rgba(0,0,0,0.02)]">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 sm:pb-5 border-b border-[#EDEDED] gap-2">
             <div>
@@ -28,7 +28,7 @@ export default function ScheduleSection() {
                 Jadwal Ibadah Mingguan
               </h3>
               <p className="text-[12px] sm:text-[13px] text-[#707070]">
-                Gereja POUK Jemaat Wasuponda, Luwu Timur
+                PPG POUK Jemaat Wasuponda, Luwu Timur
               </p>
             </div>
             <a
@@ -46,14 +46,14 @@ export default function ScheduleSection() {
             </a>
           </div>
 
-          {/* List of 4 Requested Services */}
+          {/* Service List */}
           <div className="divide-y divide-[#EDEDED] mt-1">
             {services.map((item) => (
               <div
                 key={item.id}
                 className="py-4 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 transition-colors hover:bg-white/80 rounded-xl px-2 sm:px-3"
               >
-                {/* Day & Time Column */}
+                {/* Day & Time */}
                 <div className="sm:w-48 shrink-0">
                   <span className="text-[12px] font-[600] text-[#707070] uppercase tracking-wider">
                     {dayNames[item.day]}
@@ -63,7 +63,7 @@ export default function ScheduleSection() {
                   </p>
                 </div>
 
-                {/* Details Column */}
+                {/* Details */}
                 <div className="grow">
                   <div className="flex items-center gap-2">
                     <h4 className="text-[16px] sm:text-[17px] font-[650] text-[#141414]">
@@ -88,7 +88,7 @@ export default function ScheduleSection() {
                   </p>
                 </div>
 
-                {/* Badge Column */}
+                {/* Badge */}
                 <div className="shrink-0 self-start sm:self-center">
                   <span className="inline-block rounded-full border border-[#EDEDED] bg-white px-3 py-1 text-[11px] font-[600] text-[#141414] shadow-xs">
                     {item.badge}
@@ -98,14 +98,14 @@ export default function ScheduleSection() {
             ))}
           </div>
 
-          {/* Bottom Info Note */}
+          {/* Bottom Note */}
           <div className="mt-5 pt-4 border-t border-[#EDEDED] flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left text-[12px] sm:text-[13px] text-[#707070]">
-            <p>Ibadah terbuka bagi seluruh keluarga jemaat, perantau, dan setiap tamu jemaat.</p>
+            <p>Terbuka bagi seluruh pemuda, remaja, dan teman-teman yang ingin bersekutu bersama.</p>
             <Link
               href="/kontak"
               className="font-[600] text-[#141414] hover:underline"
             >
-              Rencanakan Kunjungan Pertama
+              Hubungi Pengurus PPG
             </Link>
           </div>
         </div>
@@ -113,4 +113,3 @@ export default function ScheduleSection() {
     </section>
   );
 }
-

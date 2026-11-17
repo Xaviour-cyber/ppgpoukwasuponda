@@ -62,13 +62,13 @@ export default function NewsEventsSection() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12 gap-4">
           <div className="max-w-xl">
             <span className="inline-flex items-center rounded-full bg-[#F2F2F2] px-3.5 py-1 text-[12px] font-[600] uppercase tracking-wider text-[#707070] mb-3">
-              Agenda & Kegiatan Gereja
+              Agenda Pemuda
             </span>
             <h2 className="text-[28px] sm:text-[36px] md:text-[40px] font-[650] tracking-[-0.03em] text-[#141414] leading-[1.18]">
-              Berita dan Acara
+              Kegiatan Mendatang
             </h2>
             <p className="mt-2 text-[14px] sm:text-[16px] text-[#707070] leading-[1.6]">
-              Dokumentasi warta pelayanan, ibadah khusus, dan kegiatan persekutuan jemaat POUK Wasuponda.
+              Agenda kegiatan, olahraga bersama, dan acara pemuda PPG POUK Wasuponda.
             </p>
           </div>
 

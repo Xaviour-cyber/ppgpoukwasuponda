@@ -32,3 +32,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Agent & local design docs
+AGENTS.md
+DESIGN.md
+.agents/
+anti-slop/

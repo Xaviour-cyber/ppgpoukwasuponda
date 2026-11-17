@@ -68,12 +68,12 @@ export default function Navbar() {
         <Link
           href="/"
           className="group flex items-center transition-opacity hover:opacity-90"
-          aria-label="POUK Wasuponda Beranda"
+          aria-label="PPG POUK Wasuponda Beranda"
         >
           <div className="relative flex items-center">
             <Image
               src="/logo-navbar.png"
-              alt="Gereja POUK Jemaat Wasuponda"
+              alt="PPG POUK Wasuponda"
               width={240}
               height={56}
               className={`h-[42px] sm:h-[48px] md:h-[50px] w-auto object-contain transition-[filter] duration-300 ease-in-out ${
@@ -132,7 +132,7 @@ export default function Navbar() {
                 : "bg-white text-[#141414] hover:bg-[#F3F4F6] shadow-md"
             }`}
           >
-            Rencanakan Kunjungan
+            Gabung PPG
           </Link>
         </div>
 
@@ -181,7 +181,7 @@ export default function Navbar() {
                 Menu Utama
               </span>
               <span className="rounded-full bg-[#F2F2F2] px-2 py-0.5 text-[10px] font-[600] text-[#707070]">
-                POUK Wasuponda
+                PPG POUK Wasuponda
               </span>
             </div>
 
@@ -219,14 +219,14 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="flex h-12 w-full items-center justify-center rounded-full bg-[#141414] text-[14px] font-[600] text-white transition active:scale-[0.98] shadow-sm"
             >
-              Rencanakan Kunjungan
+              Gabung PPG
             </Link>
             <Link
               href="/kontak"
               onClick={() => setOpen(false)}
               className="flex h-12 w-full items-center justify-center rounded-full border border-[#EDEDED] text-[14px] font-[500] text-[#141414] hover:bg-[#F2F2F2] transition"
             >
-              Hubungi Sekretariat
+              Hubungi Pengurus PPG
             </Link>
             <p className="pt-2 text-center text-[12px] text-[#9E9E9E]">
               {church.address}
