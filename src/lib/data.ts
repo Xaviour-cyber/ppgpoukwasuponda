@@ -136,6 +136,66 @@ export const events: Event[] = [
   },
 ];
 
+export type PastEvent = {
+  id: string;
+  title: string;
+  subtitle?: string;
+  tag: string;
+  badge: string;
+  dateFull: string;
+  time: string;
+  place: string;
+  summary: string;
+  image: string;
+  contacts?: { name: string; phone: string }[];
+};
+
+export const pastEvents: PastEvent[] = [
+  {
+    id: "past-bazar-cafe-2026",
+    title: "Bazar Cafe & Live Music",
+    subtitle: "Coffee Jacque & The Juice × PPG POUK Wasuponda",
+    tag: "Bazar & Musik",
+    badge: "Selesai Terlaksana",
+    dateFull: "Sabtu, 14 November 2026",
+    time: "18:30 WITA",
+    place: "Coffee Jacque & The Juice, Wasuponda",
+    summary:
+      "Malam kebersamaan pemuda melalui kolaborasi spesial Bazar Cafe & Live Music antara Coffee Jacque & The Juice dan PPG POUK Jemaat Wasuponda. Diisi dengan persekutuan santai, live acoustic, dan open order delivery pemuda.",
+    image: "/berita/bazar-cafe-live-music.png",
+    contacts: [
+      { name: "Joya", phone: "085657253896" },
+      { name: "Ricard", phone: "081356477158" },
+    ],
+  },
+  {
+    id: "past-retret-pemuda-2026",
+    title: "Retret & Bina Akrab PPG",
+    subtitle: "Bertumbuh Bersama dalam Kasih dan Pelayanan",
+    tag: "Persekutuan",
+    badge: "Dokumentasi",
+    dateFull: "Oktober 2026",
+    time: "3 Hari 2 Malam",
+    place: "Wasuponda & Sekitarnya",
+    summary:
+      "Kilas balik retret pemuda PPG POUK Wasuponda untuk mempererat persaudaraan, pembinaan firman, refleksi iman bersama, dan saling menopang dalam pelayanan jemaat.",
+    image: "/events/retret-pemuda.jpg",
+  },
+  {
+    id: "past-olahraga-pemuda-2026",
+    title: "Olahraga Persahabatan Pemuda",
+    subtitle: "Latihan & Tanding Futsal / Voli Bersama",
+    tag: "Olahraga",
+    badge: "Rutin Pemuda",
+    dateFull: "November 2026",
+    time: "15:00 WITA",
+    place: "Lapangan Karelai, Wasuponda",
+    summary:
+      "Aktivitas rutin olahraga bersama pemuda PPG POUK Wasuponda setiap akhir pekan di Lapangan Karelai untuk menjaga kebugaran jasmani dan sportivitas antar pemuda.",
+    image: "/events/bakti-sosial.jpg",
+  },
+];
+
 export const pastoralWelcome = {
   quote:
     "Pemuda bukan sekadar masa depan gereja, tetapi kekuatan masa kini. Di PPG POUK Wasuponda, kita saling menguatkan, bertumbuh bersama dalam iman, dan berdampak nyata bagi sesama di Wasuponda dan di mana pun kita berada.",
