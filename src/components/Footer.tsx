@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { church, mapsUrl, socialLinks } from "@/lib/data";
+import { church, mapsUrl, socialLinks, gformUrl } from "@/lib/data";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -116,12 +116,14 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/kontak"
+                  <a
+                    href={gformUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#707070] transition-colors hover:text-[#141414]"
                   >
-                    Daftar Anggota Pemuda
-                  </Link>
+                    Daftar Anggota Pemuda ↗
+                  </a>
                 </li>
                 <li>
                   <Link

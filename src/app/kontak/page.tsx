@@ -78,12 +78,13 @@ export default function Kontak() {
                 href={gformUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-[42px] items-center justify-center rounded-full bg-[#1D4ED8] px-6 text-[14px] font-[600] text-white hover:bg-[#1e40af] transition shadow-sm active:scale-[0.98]"
+                className="inline-flex h-[42px] items-center justify-center gap-1.5 rounded-full bg-[#1D4ED8] px-6 text-[14px] font-[600] text-white hover:bg-[#1e40af] transition shadow-sm active:scale-[0.98]"
               >
-                Isi Formulir Pendaftaran
+                <span>Isi Formulir Database PPG</span>
+                <span className="text-[12px]">↗</span>
               </a>
-              <p className="mt-2 text-[11px] text-[#707070]">
-                Link formulir akan segera tersedia.
+              <p className="mt-2.5 text-[11px] text-[#707070]">
+                Formulir resmi pendataan anggota pemuda PPG POUK Wasuponda.
               </p>
             </div>
 

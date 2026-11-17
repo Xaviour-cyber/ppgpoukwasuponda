@@ -19,8 +19,8 @@ export const socialLinks = {
   wa: `https://wa.me/${church.wa}?text=${encodeURIComponent("Shalom PPG POUK Wasuponda, saya ingin bertanya seputar...")}`,
 };
 
-// Google Form placeholder — link akan diisi nanti
-export const gformUrl = "#";
+// Link Google Form database pemuda resmi PPG POUK Wasuponda
+export const gformUrl = "https://forms.gle/LwUW5gSp3Gk1A6R58";
 
 // 4 menu utama + Kontak sebagai tombol aksi
 export const nav = [
